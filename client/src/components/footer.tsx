@@ -132,7 +132,7 @@ export function Footer() {
               © 2024 Zero dB. All rights reserved.
             </p>
             <p className="text-soft-white/60 text-sm mt-4 md:mt-0">
-              Engineered in Switzerland. Perfected worldwide.
+              Engineered in Ireland. Perfected worldwide.
             </p>
           </div>
         </motion.div>
