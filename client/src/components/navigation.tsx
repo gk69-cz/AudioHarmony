@@ -49,7 +49,7 @@ export function Navigation() {
           <div className="hidden lg:flex items-center space-x-12">
             {navigationItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <motion.a
+                <motion.div
                   whileHover={{ scale: 1.05 }}
                   className={`text-sm font-medium transition-colors cursor-pointer ${
                     location === item.href
@@ -58,7 +58,7 @@ export function Navigation() {
                   }`}
                 >
                   {item.label}
-                </motion.a>
+                </motion.div>
               </Link>
             ))}
           </div>
@@ -104,7 +104,7 @@ export function Navigation() {
           >
             {navigationItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <motion.a
+                <motion.div
                   whileHover={{ x: 10 }}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-3 text-base font-medium transition-colors cursor-pointer ${
@@ -114,7 +114,7 @@ export function Navigation() {
                   }`}
                 >
                   {item.label}
-                </motion.a>
+                </motion.div>
               </Link>
             ))}
           </motion.div>

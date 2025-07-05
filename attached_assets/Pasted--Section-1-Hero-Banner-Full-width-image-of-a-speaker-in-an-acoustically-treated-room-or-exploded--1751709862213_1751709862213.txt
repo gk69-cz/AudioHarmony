@@ -1,0 +1,83 @@
+🔧 Section 1: Hero Banner
+Full-width image of a speaker in an acoustically treated room or exploded-view of components.
+
+Overlay title:
+“Engineered Sound. Crafted for Performance.”
+
+Subheadline:
+“Precision-crafted audio solutions from our labs in Ireland, India, and UAE.”
+
+🧩 Section 2: Product Showcase Grid
+⬛ Component Cards for Each Key Product Line
+Image (angled, professional render or real)
+
+Title (e.g., “Zero dB Core 5” or “DIY Assembly Kit”)
+
+Short spec list:
+• Frequency Response: 40Hz – 20kHz
+• Power Handling: 100W RMS
+• Impedance: 8 Ohms
+
+➡️ CTA Button: “Learn More” → (links to individual product page or popup)
+
+🔸 UI Details: Hover effect lifts the card slightly, optional magnetic cursor, smooth fade-in on scroll.
+
+🧪 Section 3: Our Technology
+Two-column layout:
+Left: Tech Concept
+Right: Visual/Diagram/Video
+
+Include:
+Crossover Design Philosophy
+
+Cabinet Resonance Control
+
+Material Science (e.g., carbon-fiber cones, dampened wood composites)
+
+Assembly Process Video (Ireland)
+
+➡️ Optional: Animated SVGs or waveform graphics.
+
+🌐 Section 4: Global Capabilities
+"Built Globally. Heard Everywhere."
+
+Grid or Card Layout by Region:
+🌍 Region	Capability
+🇮🇳 India	Product Sales + Service, Bulk Orders, Repair Support
+🇮🇪 Ireland	Custom Assembly, R&D Testing Lab, In-Person Setup
+🇦🇪 UAE	Import & Export Hub, Distribution, Regional Support
+
+➡️ Use country flags + map markers (animated SVG or static visual)
+
+🔩 Section 5: DIY Kits & Assembly Support
+Showcase your DIY Speaker Kits and Assembly Workshop in Ireland
+
+Images of people building the speaker, circuit board, and tools.
+
+Highlight support for enthusiasts, educators, and audio professionals.
+
+💡 UI Additions:
+
+Accordion FAQs (“Can I assemble this myself?” “What tools do I need?”)
+
+Downloadable PDF Assembly Manual
+
+Embedded 3D Model Viewer for the build process
+
+🚚 Section 6: Services We Offer
+Custom Design for Studios
+
+OEM Partnerships
+
+Global Sourcing / Import-Export Logistics
+
+After-Sales Support by Region
+
+📦 UI Tip: Use icon-based cards or a vertical step-by-step list with microanimations on scroll.
+
+📬 Section 7: Call to Action
+Big, centered CTA with premium visual:
+
+“Partner With Zero dB — From Blueprint to Bassline”
+
+➡️ CTA Button: “Talk to Our Engineers” → opens contact modal/form
