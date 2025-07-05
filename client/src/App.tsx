@@ -12,6 +12,7 @@ import ProductDetail from "@/pages/product-detail";
 import Technology from "@/pages/technology";
 import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";
+import Assembly from "@/pages/assembly";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/technology" component={Technology} />
       <Route path="/blog" component={Blog} />
       <Route path="/contact" component={Contact} />
+      <Route path="/assembly" component={Assembly} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
