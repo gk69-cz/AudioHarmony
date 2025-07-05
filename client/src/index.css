@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 96.1%);
+  --foreground: hsl(0, 0%, 3.9%);
+  --muted: hsl(0, 0%, 95.9%);
+  --muted-foreground: hsl(0, 0%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 3.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 3.9%);
+  --border: hsl(0, 0%, 90%);
+  --input: hsl(0, 0%, 90%);
+  --primary: hsl(0, 0%, 0%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 95.9%);
+  --secondary-foreground: hsl(0, 0%, 10%);
+  --accent: hsl(43, 74%, 49%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(0, 0%, 3.9%);
+  --radius: 0.5rem;
+  
+  /* Zero dB Brand Colors - Light Theme */
+  --zero-db-background: hsl(0, 0%, 96.1%);
+  --zero-db-primary: hsl(0, 0%, 0%);
+  --zero-db-secondary: hsl(0, 0%, 11.8%);
+  --zero-db-accent: hsl(43, 74%, 49%);
+  --zero-db-text: hsl(0, 0%, 3.9%);
+  --zero-db-surface: hsl(0, 0%, 100%);
+  --zero-db-platinum: hsl(0, 0%, 53.3%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 5.1%);
+  --foreground: hsl(0, 0%, 91.8%);
+  --muted: hsl(0, 0%, 15.9%);
+  --muted-foreground: hsl(0, 0%, 64.9%);
+  --popover: hsl(0, 0%, 5.1%);
+  --popover-foreground: hsl(0, 0%, 91.8%);
+  --card: hsl(0, 0%, 10.2%);
+  --card-foreground: hsl(0, 0%, 91.8%);
+  --border: hsl(0, 0%, 15.9%);
+  --input: hsl(0, 0%, 15.9%);
+  --primary: hsl(0, 0%, 96.1%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 91.8%);
+  --accent: hsl(51, 100%, 50%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 91.8%);
+  --ring: hsl(0, 0%, 83.9%);
+  
+  /* Zero dB Brand Colors - Dark Theme */
+  --zero-db-background: hsl(0, 0%, 5.1%);
+  --zero-db-primary: hsl(0, 0%, 96.1%);
+  --zero-db-secondary: hsl(0, 0%, 53.3%);
+  --zero-db-accent: hsl(51, 100%, 50%);
+  --zero-db-text: hsl(0, 0%, 91.8%);
+  --zero-db-surface: hsl(0, 0%, 10.2%);
+  --zero-db-platinum: hsl(0, 0%, 53.3%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--zero-db-background);
+    color: var(--zero-db-text);
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .magnetic-button {
+    @apply transition-all duration-300 ease-out;
+    transform-origin: center;
+  }
+  
+  .magnetic-button:hover {
+    @apply scale-105;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--zero-db-accent);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+  }
+  
+  .frequency-bar {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .wave-animation {
+    animation: wave 2s ease-in-out infinite;
+  }
+  
+  .wave-animation:nth-child(2) { animation-delay: 0.1s; }
+  .wave-animation:nth-child(3) { animation-delay: 0.2s; }
+  .wave-animation:nth-child(4) { animation-delay: 0.3s; }
+  .wave-animation:nth-child(5) { animation-delay: 0.4s; }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  .text-extra-wide {
+    letter-spacing: 0.15em;
+  }
+  
+  .bg-zero-db {
+    background-color: var(--zero-db-background);
+  }
+  
+  .text-zero-db {
+    color: var(--zero-db-text);
+  }
+  
+  .text-zero-db-accent {
+    color: var(--zero-db-accent);
+  }
+  
+  .bg-zero-db-accent {
+    background-color: var(--zero-db-accent);
+  }
+  
+  .bg-zero-db-surface {
+    background-color: var(--zero-db-surface);
+  }
+  
+  .border-zero-db-accent {
+    border-color: var(--zero-db-accent);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.5); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
