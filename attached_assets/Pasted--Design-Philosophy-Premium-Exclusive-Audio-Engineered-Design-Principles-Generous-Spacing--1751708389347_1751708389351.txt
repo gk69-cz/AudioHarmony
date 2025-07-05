@@ -1,0 +1,69 @@
+🧠 Design Philosophy – Premium + Exclusive + Audio-Engineered
+✨ Design Principles
+Generous Spacing & Clean Grid
+
+Use 12-column layout with plenty of breathing room
+
+Apply asymmetrical grid layouts for a modern feel
+
+Use max-width: 1440px container with padding (px-6 to px-10)
+
+Minimal Typography, Bold Hierarchy
+
+Modern sans-serif like Suisse Int’l, Neue Haas Grotesk, or Inter
+
+Strong heading sizes (e.g., 48–64px) + elegant paragraph spacing
+
+Wide tracking for large hero text
+
+Smooth Microinteractions
+
+Hover effects with magnetic motion or 3D tilt on product cards
+
+Scroll-based animations (e.g., reveal sections, parallax backgrounds)
+
+Subtle audio cues on hover/click (optional, low-volume hi-fi feel)
+
+High-Fidelity Imagery
+
+4K-quality speaker renders or product shots with custom lighting
+
+Close-up macro shots of materials (speaker cones, grills, etc.)
+
+Video + Sound as Atmosphere
+
+Use ambient video background (e.g., slow-mo speaker vibrating to bass)
+
+Looping muted audio demo of Zero dB's range (toggle control visible)
+
+🎨 Color Scheme: Light & Dark Theme
+⚪ Light Theme
+Element	Color
+Background	#F5F5F5 (Subtle warm gray)
+Primary Accent	#000000 (Jet black)
+Secondary Accent	#1E1E1E (Graphite gray)
+Highlight Color	#DAA520 (Premium gold hint)
+Typography	#0A0A0A (Rich black)
+Surface (cards, bg)	#FFFFFF (White)
+
+This creates a high-contrast, clean luxury look with a touch of gold or bronze to imply exclusivity.
+
+⚫ Dark Theme
+Element	Color
+Background	#0D0D0D (Deep true black)
+Primary Accent	#F5F5F5 (Warm off-white)
+Secondary Accent	#888888 (Muted metal gray)
+Highlight Color	#FFD700 (Gold - slightly glowing)
+Typography	#EAEAEA (Soft white)
+Surface	#1A1A1A (Satin black)
+
+Dark themes evoke a studio-like, cinematic feel. Ideal for late-night users and pro audio environments.
+
+🧩 Interactive Elements & Features
+Feature	Description
+Animated Speaker Graph	Visual frequency response graph or wave animation synced to demo sounds
+3D Speaker Model Viewer	Allow users to rotate/explore a speaker in 3D (using Three.js or Sketchfab)
+Scroll-Triggered Reveal	As user scrolls, content fades/slides in with friction-based animation
+Magnetic Buttons	Buttons slightly follow the cursor to give a tactile, physical feel
+Parallax Media	Hero image subtly moves on scroll to mimic audio waves
+Sound Hover Effects	Low-volume click or hover tone (optional, muted by default)
