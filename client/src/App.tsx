@@ -15,7 +15,7 @@ const Products = React.lazy(() => import("@/pages/products"));
 const ProductDetail = React.lazy(() => import("@/pages/product-detail"));
 const Technology = React.lazy(() => import("@/pages/technology"));
 const Contact = React.lazy(() => import("@/pages/contact"));
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 function Router() {
   return (
     <Suspense fallback={<div> <CustomCursor /></div>}>
