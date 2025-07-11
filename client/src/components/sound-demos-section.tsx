@@ -12,7 +12,7 @@ export function SoundDemosSection() {
       id: 'classical',
       title: 'Classical Precision',
       description: 'Orchestra separation demo',
-      url: '/audio/classical-demo.mp3',
+      url: '/assets/audio/one.mp3',
       duration: '1:32',
       icon: 'music'
     },

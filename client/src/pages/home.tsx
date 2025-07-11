@@ -28,7 +28,7 @@ export default function Home() {
         <SoundDemosSection />
         <MediaGallery />
         <GlobalPresence />
-        <ContactSection />
+        {/* <ContactSection /> */}
       </main>
       <Footer />
     </>

@@ -93,11 +93,9 @@ export default function ProductDetail() {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                  <MagneticButton variant="primary" size="lg">
-                    Add to Cart
-                  </MagneticButton>
                   
-                  <MagneticButton variant="secondary" size="lg">
+                  
+                  <MagneticButton variant="primary" size="lg">
                     <Download className="w-5 h-5 mr-2" />
                     Download Specs
                   </MagneticButton>

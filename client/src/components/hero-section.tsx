@@ -47,20 +47,9 @@ export function HeroSection() {
               variants={fadeInUp}
               className="flex flex-col sm:flex-row gap-6"
             >
-              <MagneticButton
-                variant="primary"
-                size="lg"
-                onClick={scrollToProducts}
-              >
-                Explore Products
-              </MagneticButton>
               
-              <MagneticButton
-                variant="outline"
-                size="lg"
-              >
-                Watch Demo
-              </MagneticButton>
+              
+              
             </motion.div>
           </motion.div>
           

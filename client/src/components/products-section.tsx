@@ -79,11 +79,11 @@ export function ProductsSection() {
                 </p>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-gold-accent dark:text-gold-glow font-semibold text-lg">
+                  {/* <span className="text-gold-accent dark:text-gold-glow font-semibold text-lg">
                     {product.price}
-                  </span>
+                  </span> */}
                   
-                  <Link href={`/products/${product.id}`}>
+                  {/* <Link href={`/products/${product.id}`}>
                     <motion.button
                       whileHover={{ x: 5 }}
                       className="text-sm font-medium hover:text-gold-accent dark:hover:text-gold-glow transition-colors flex items-center gap-2"
@@ -91,7 +91,7 @@ export function ProductsSection() {
                       Explore
                       <ArrowRight className="w-4 h-4" />
                     </motion.button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </motion.div>

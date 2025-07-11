@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { fadeInUp, slideInFromLeft, slideInFromRight, staggerContainer } from '@/lib/animations'
 import { Cpu, Atom, Zap, Waves, Settings, Volume2, Play } from 'lucide-react'
 import { MagneticButton } from '@/components/magnetic-button'
+import FrequencyAnalyzer from '@/components/FrequencyAnalyser'
 
 export default function Technology() {
   const technologies = [
@@ -173,7 +174,7 @@ export default function Technology() {
         {/* Assembly Process Video Section */}
         <section className="py-32 bg-warm-gray dark:bg-deep-black">
           <div className="max-w-8xl mx-auto px-6 lg:px-10">
-            <motion.div
+            {/* <motion.div
               variants={fadeInUp}
               initial="initial"
               whileInView="animate"
@@ -188,10 +189,10 @@ export default function Technology() {
                 Watch our master craftsmen assemble each speaker with precision and care in our 
                 state-of-the-art Irish facility.
               </p>
-            </motion.div>
+            </motion.div> */}
 
             <div className="grid lg:grid-cols-3 gap-8 mb-16">
-              {assemblySteps.map((step, index) => (
+              {/* {assemblySteps.map((step, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -219,11 +220,11 @@ export default function Technology() {
                     </p>
                   </div>
                 </motion.div>
-              ))}
+              ))} */}
             </div>
 
             {/* Video Player Mockup */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
@@ -248,7 +249,7 @@ export default function Technology() {
                 <div className="text-sm opacity-80">Assembly Process</div>
                 <div className="text-lg font-semibold">Behind the Scenes at Zero dB Ireland</div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </section>
 
@@ -366,7 +367,7 @@ export default function Technology() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-32 bg-jet-black dark:bg-deep-black">
+        {/* <section className="py-32 bg-jet-black dark:bg-deep-black">
           <div className="max-w-8xl mx-auto px-6 lg:px-10 text-center">
             <motion.div
               variants={fadeInUp}
@@ -379,17 +380,18 @@ export default function Technology() {
                 <span className="text-gold-accent dark:text-gold-glow block">Technology</span>
               </h2>
               
-              <p className="text-xl text-soft-white/90 max-w-3xl mx-auto mb-12">
+              {/* <p className="text-xl text-soft-white/90 max-w-3xl mx-auto mb-12">
                 Schedule a demonstration at our facility or request detailed technical specifications 
                 to experience Zero dB technology firsthand.
-              </p>
+              </p> */}
               
-              <MagneticButton variant="primary" size="lg" className="mt-8">
+              {/* <MagneticButton variant="primary" size="lg" className="mt-8">
                 Schedule Demo
-              </MagneticButton>
-            </motion.div>
+              </MagneticButton> */}
+            {/* </motion.div>
           </div>
-        </section>
+        </section> */} 
+        <FrequencyAnalyzer />
       </main>
       <Footer />
     </>

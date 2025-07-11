@@ -15,8 +15,8 @@ export function Navigation() {
     { href: '/about', label: 'About' },
     { href: '/products', label: 'Products' },
     { href: '/technology', label: 'Technology' },
-    { href: '/assembly', label: '3D Assembly' },
-    { href: '/blog', label: 'Blog' },
+    // { href: '/assembly', label: '3D Assembly' },
+    // { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
   ]
 

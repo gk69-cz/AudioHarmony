@@ -3,17 +3,16 @@ import { fadeInUp, slideInFromLeft, slideInFromRight } from '@/lib/animations'
 
 export function GlobalPresence() {
   const stats = [
-    { number: '50+', label: 'Countries' },
-    { number: '200+', label: 'Partners' },
+    { number: '2+', label: 'Countries' },
+    { number: '20+', label: 'Partners' },
     { number: '1000+', label: 'Studios' },
-    { number: '25', label: 'Years' }
+    { number: '1', label: 'Years' }
   ]
 
   const offices = [
-    { region: 'North America', locations: 'New York, Los Angeles' },
-    { region: 'Europe', locations: 'London, Berlin' },
-    { region: 'Asia Pacific', locations: 'Tokyo, Singapore' },
-    { region: 'Headquarters', locations: 'Zurich, Switzerland' }
+    { region: 'Ireland', locations: 'Cork' },
+    { region: 'UAE', locations: 'Abudhabi' },
+    { region: 'India', locations: 'Kerala,' },
   ]
 
   return (

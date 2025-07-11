@@ -47,21 +47,21 @@ export function AboutSection() {
             </div>
           </motion.div>
           
-          <motion.div
-            variants={slideInFromRight}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="lg:col-span-6"
-          >
-            <motion.img
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-              src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Premium speaker engineering detail"
-              className="rounded-2xl shadow-2xl w-full animate-float"
-            />
-          </motion.div>
+            <motion.div
+              variants={slideInFromRight}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="lg:col-span-6 flex justify-center"
+            >
+              <motion.img
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+                src="/assets/images/about.jpg"
+                alt="Premium speaker engineering detail"
+                className="rounded-2xl shadow-2xl w-full max-w-md animate-float"
+              />
+            </motion.div>
         </div>
       </div>
     </section>
