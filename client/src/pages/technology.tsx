@@ -172,8 +172,8 @@ export default function Technology() {
         </section>
 
         {/* Assembly Process Video Section */}
-        <section className="py-32 bg-warm-gray dark:bg-deep-black">
-          <div className="max-w-8xl mx-auto px-6 lg:px-10">
+        {/* <section className="py-32 bg-warm-gray dark:bg-deep-black">
+          <div className="max-w-8xl mx-auto px-6 lg:px-10"> */}
             {/* <motion.div
               variants={fadeInUp}
               initial="initial"
@@ -191,7 +191,7 @@ export default function Technology() {
               </p>
             </motion.div> */}
 
-            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {/* <div className="grid lg:grid-cols-3 gap-8 mb-16">
               {/* {assemblySteps.map((step, index) => (
                 <motion.div
                   key={index}
@@ -221,7 +221,7 @@ export default function Technology() {
                   </div>
                 </motion.div>
               ))} */}
-            </div>
+            {/* </div>  */}
 
             {/* Video Player Mockup */}
             {/* <motion.div
@@ -250,121 +250,10 @@ export default function Technology() {
                 <div className="text-lg font-semibold">Behind the Scenes at Zero dB Ireland</div>
               </div>
             </motion.div> */}
-          </div>
-        </section>
+          {/* </div>
+        </section> */}
 
-        {/* Animated Waveform Graphics */}
-        <section className="py-32 bg-white dark:bg-satin-black">
-          <div className="max-w-8xl mx-auto px-6 lg:px-10">
-            <motion.div
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              className="text-center mb-20"
-            >
-              <h2 className="text-5xl lg:text-6xl font-black tracking-wide mb-8">
-                Frequency
-                <span className="text-gold-accent dark:text-gold-glow"> Response</span>
-              </h2>
-              <p className="text-xl text-platinum dark:text-soft-white/80 max-w-3xl mx-auto">
-                Our speakers deliver ruler-flat frequency response across the entire audible spectrum, 
-                ensuring every note is reproduced with mathematical precision.
-              </p>
-            </motion.div>
-
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <div className="bg-warm-gray dark:bg-deep-black rounded-2xl p-8">
-                  <h3 className="text-2xl font-bold mb-6 text-jet-black dark:text-soft-white text-center">
-                    Live Frequency Analysis
-                  </h3>
-                  
-                  {/* Animated Frequency Bars */}
-                  <div className="flex items-end justify-center space-x-2 h-40 mb-6">
-                    {Array.from({ length: 20 }).map((_, index) => (
-                      <motion.div
-                        key={index}
-                        className="bg-gold-accent dark:bg-gold-glow w-4 rounded-t"
-                        animate={{
-                          height: [
-                            Math.random() * 120 + 20,
-                            Math.random() * 120 + 20,
-                            Math.random() * 120 + 20
-                          ]
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          delay: index * 0.1,
-                          ease: "easeInOut"
-                        }}
-                      />
-                    ))}
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-gold-accent dark:text-gold-glow font-semibold mb-2">
-                      20Hz - 20kHz | ±0.5dB
-                    </div>
-                    <div className="text-platinum dark:text-soft-white/60 text-sm">
-                      THD: &lt;0.1% | SNR: &gt;120dB
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="space-y-6"
-              >
-                <div className="flex items-center space-x-4">
-                  <Volume2 className="text-gold-accent dark:text-gold-glow w-8 h-8" />
-                  <div>
-                    <h4 className="text-xl font-bold text-jet-black dark:text-soft-white">
-                      Extended Range
-                    </h4>
-                    <p className="text-platinum dark:text-soft-white/80">
-                      From sub-bass fundamentals to air frequencies, every detail preserved
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <Cpu className="text-gold-accent dark:text-gold-glow w-8 h-8" />
-                  <div>
-                    <h4 className="text-xl font-bold text-jet-black dark:text-soft-white">
-                      Digital Precision
-                    </h4>
-                    <p className="text-platinum dark:text-soft-white/80">
-                      DSP-corrected response ensures consistent performance
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4">
-                  <Zap className="text-gold-accent dark:text-gold-glow w-8 h-8" />
-                  <div>
-                    <h4 className="text-xl font-bold text-jet-black dark:text-soft-white">
-                      Zero Phase Shift
-                    </h4>
-                    <p className="text-platinum dark:text-soft-white/80">
-                      Linear phase crossovers maintain temporal accuracy
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+      
 
         {/* Call to Action */}
         {/* <section className="py-32 bg-jet-black dark:bg-deep-black">
