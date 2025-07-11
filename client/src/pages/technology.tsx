@@ -1,3 +1,4 @@
+import React from 'react';
 import { Navigation } from '@/components/navigation'
 import { CustomCursor } from '@/components/custom-cursor'
 import { Footer } from '@/components/footer'
@@ -5,7 +6,7 @@ import { motion } from 'framer-motion'
 import { fadeInUp, slideInFromLeft, slideInFromRight, staggerContainer } from '@/lib/animations'
 import { Cpu, Atom, Zap, Waves, Settings, Volume2, Play } from 'lucide-react'
 import { MagneticButton } from '@/components/magnetic-button'
-import FrequencyAnalyzer from '@/components/FrequencyAnalyser'
+const FrequencyAnalyzer = React.lazy(() => import('@/components/FrequencyAnalyser'));
 
 export default function Technology() {
   const technologies = [
