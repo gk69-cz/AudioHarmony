@@ -15,7 +15,7 @@ const Products = React.lazy(() => import("@/pages/products"));
 const ProductDetail = React.lazy(() => import("@/pages/product-detail"));
 const Technology = React.lazy(() => import("@/pages/technology"));
 const Contact = React.lazy(() => import("@/pages/contact"));
-
+import { Analytics } from "@vercel/analytics/next"
 function Router() {
   return (
     <Suspense fallback={<div> <CustomCursor /></div>}>
@@ -34,6 +34,7 @@ function Router() {
 
 function App() {
   return (
+     
     <QueryClientProvider client={queryClient}>
       <ThemeProvider
         attribute="class"
@@ -41,6 +42,7 @@ function App() {
         enableSystem
         disableTransitionOnChange
       >
+        <Analytics/>
         <TooltipProvider>
           <Toaster />
           <Router />
