@@ -5,12 +5,16 @@ import { Link } from 'wouter'
 export function Footer() {
   const footerSections = [
     {
-      title: 'Products',
+      title: 'Product categories',
       links: [
-        { label: 'Reference Monitors', href: '/products/reference-monitors' },
-        { label: 'Tower Series', href: '/products/tower-series' },
-        { label: 'Subwoofers', href: '/products/subwoofers' },
-        { label: 'Custom Builds', href: '/products/custom' },
+        { label: 'All Products', href: '/product' },
+{ label: 'Subwoofer', href: '/product?category=Subwoofer' },
+{ label: 'Tower / Floorstand', href: '/product?category=Tower%20%2F%20Floorstand' },
+{ label: 'Bookshelf / Standmount', href: '/product?category=Bookshelf%20%2F%20Standmount' },
+{ label: 'Center', href: '/product?category=Center' },
+{ label: 'Surround / Height / On-Wall', href: '/product?category=Surround%20%2F%20Height%20%2F%20On-Wall' },
+{ label: 'Accessories', href: '/product?category=Accessories' },
+{ label: 'Stand', href: '/product?category=Stand' }
       ]
     },
     {

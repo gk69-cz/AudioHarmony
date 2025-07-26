@@ -16,15 +16,20 @@ const ProductDetail = React.lazy(() => import("@/pages/product-detail"));
 const Technology = React.lazy(() => import("@/pages/technology"));
 const Contact = React.lazy(() => import("@/pages/contact"));
 import { Analytics } from "@vercel/analytics/react";
+import Categories from "./pages/categories";
 function Router() {
   return (
     <Suspense fallback={<div> <CustomCursor /></div>}>
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/products" component={Products} />
-        <Route path="/products/:id" component={ProductDetail} />
+        
+        <Route path="/product" component={Categories} />
+        <Route path="/products" component={ProductDetail} />
         <Route path="/technology" component={Technology} />
+        <Route path="/category" component={Categories} />
+        <Route path="/products" component={ProductDetail} />
+<Route path="/product/:id" component={ProductDetail} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>

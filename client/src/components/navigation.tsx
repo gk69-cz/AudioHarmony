@@ -13,7 +13,7 @@ export function Navigation() {
   const navigationItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/products', label: 'Products' },
+    { href: '/product', label: 'Products' },
     { href: '/technology', label: 'Technology' },
     // { href: '/assembly', label: '3D Assembly' },
     // { href: '/blog', label: 'Blog' },
