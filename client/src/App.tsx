@@ -17,6 +17,7 @@ const Technology = React.lazy(() => import("@/pages/technology"));
 const Contact = React.lazy(() => import("@/pages/contact"));
 import { Analytics } from "@vercel/analytics/react";
 import Categories from "./pages/categories";
+import CookieConsent from "./components/CookieConsent";
 function Router() {
   return (
     <Suspense fallback={<div> <CustomCursor /></div>}>
@@ -47,6 +48,7 @@ function App() {
         enableSystem
         disableTransitionOnChange
       >
+         <CookieConsent />
         <Analytics/>
         <TooltipProvider>
           <Toaster />
